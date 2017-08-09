@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+
+ This software is the confidential and proprietary information of SAP
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with SAP.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+           
+    <context:annotation-config/> 
+
+	<bean id="test.checkOrderAction" class="hu.vodafone.fulfilmentprocess.test.actions.CheckOrder"  parent="abstractAction"/>
+	<bean id="test.cancelWholeOrderAuthorizationAction" class="hu.vodafone.fulfilmentprocess.test.actions.CancelWholeOrderAuthorization"  parent="abstractAction"/>
+	<bean id="test.sendOrderPlacedNotificationAction" class="hu.vodafone.fulfilmentprocess.test.actions.SendOrderPlacedNotification"  parent="abstractAction"/>
+	<bean id="test.takePaymentAction" class="hu.vodafone.fulfilmentprocess.test.actions.TakePayment"  parent="abstractAction"/>
+	<bean id="test.sendPaymentFailedNotificationAction" class="hu.vodafone.fulfilmentprocess.test.actions.SendPaymentFailedNotification"  parent="abstractAction"/>
+	<bean id="test.checkTransactionReviewStatusAction" class="hu.vodafone.fulfilmentprocess.test.actions.CheckTransactionReviewStatus"  parent="abstractAction"/>
+	<bean id="test.fraudCheckOrderAction" class="hu.vodafone.fulfilmentprocess.test.actions.FraudCheckOrder"  parent="abstractAction"/>
+	<bean id="test.prepareOrderForManualCheckAction" class="hu.vodafone.fulfilmentprocess.test.actions.PrepareOrderForManualCheck"  parent="abstractAction"/>
+	<bean id="test.sendFraudErrorNotificationAction" class="hu.vodafone.fulfilmentprocess.test.actions.SendFraudErrorNotification"  parent="abstractAction"/>
+	<bean id="test.checkAuthorizeOrderPaymentAction" class="hu.vodafone.fulfilmentprocess.test.actions.CheckAuthorizeOrderPayment"  parent="abstractAction"/>
+	<bean id="test.sendAuthorizationFailedNotificationAction" class="hu.vodafone.fulfilmentprocess.test.actions.SendAuthorizationFailedNotification"  parent="abstractAction"/>
+	<bean id="test.reserveOrderAmountAction" class="hu.vodafone.fulfilmentprocess.test.actions.ReserveOrderAmount"  parent="abstractAction"/>
+	<bean id="test.fraudCheckOrderInternalAction" class="hu.vodafone.fulfilmentprocess.test.actions.FraudCheckOrderInternal"  parent="abstractAction"/>
+	<bean id="test.orderManualCheckedAction" class="hu.vodafone.fulfilmentprocess.test.actions.OrderManualChecked"  parent="abstractAction"/>
+	<bean id="test.splitOrderAction" class="hu.vodafone.fulfilmentprocess.test.actions.SplitOrder"  parent="abstractAction"/>
+	<bean id="test.subprocessesCompletedAction" class="hu.vodafone.fulfilmentprocess.test.actions.SubprocessesCompleted"  parent="abstractAction"/>
+	<bean id="test.sendOrderCompletedNotificationAction" class="hu.vodafone.fulfilmentprocess.test.actions.SendOrderCompletedNotification"  parent="abstractAction"/>
+	<bean id="test.scheduleForCleanUpAction" class="hu.vodafone.fulfilmentprocess.test.actions.ScheduleForCleanUp"  parent="abstractAction"/>
+	<bean id="test.notifyCustomerAboutFraudAction" class="hu.vodafone.fulfilmentprocess.test.actions.NotifyCustomerAboutFraud"  parent="abstractAction"/>
+
+</beans>
