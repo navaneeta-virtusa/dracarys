@@ -119,6 +119,12 @@
         <property name="add" ref="vfUserRaoPopulator"/>
     </bean>
 
+    <bean id="defaultCustomerReviewRaoExtractor" class="hu.vodafone.promotionengineservices.rao.providers.CustomerReviewRaoExtractor"/>
+    <alias name="defaultCustomerReviewRaoExtractor" alias="customerReviewRaoExtractor"/>
+
+    <bean id="vfCartRAOProviderExtractorsListMergeDirective" depends-on="cartRAOProviderExtractors" parent="listMergeDirective">
+        <property name="add" ref="customerReviewRaoExtractor"/>
+    </bean>
 
 
 </beans>
