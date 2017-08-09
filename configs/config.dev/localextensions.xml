@@ -33,6 +33,8 @@
     <extension name='rulebuilderbackoffice' />
     <extension name='smartedit' />
 
+    <extension name='vodafonepromotionengineservices' />
+
 
     <webapp contextroot='entitlements-web' path='${HYBRIS_BIN_DIR}/../../hybris-ems/binary/entitlements-web.war' />
     <webapp contextroot='hybris-cis-mock-subscription-web' path='${HYBRIS_BIN_DIR}/../../hybris-sbg/binary/hybris-cis-mock-subscription-web.war' />
