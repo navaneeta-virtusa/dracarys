@@ -66,4 +66,14 @@
 
 	-->
 
+
+	<bean class="hu.vodafone.ruleengineservices.rao.CustomerReviewRAO">
+		<property name="product" type="de.hybris.platform.ruleengineservices.rao.ProductRAO"/>
+	</bean>
+
+	<bean class="de.hybris.platform.ruleengineservices.rao.UserRAO">
+		<property name="customerReviews" type="java.util.List&lt;hu.vodafone.ruleengineservices.rao.CustomerReviewRAO>" />
+	</bean>
+
+
 </beans>
